@@ -29,16 +29,17 @@ header{
 /* MAIN */
 
 main{
-    background-color: aquamarine;
-    height: calc(100vh - 130px);
+    background-color: #000;
+    height: calc(100vh - 120px);
     overflow-y: auto;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
-.row{
+.partecipant{
     margin: 0 -10px;
 }
-.column {
+
+.flex-container {
     display:flex;
     flex-wrap: wrap;
 }
@@ -46,6 +47,7 @@ main{
 .card img{
     max-width: 100%;
     display:block;
+    
 }
 
 /* CARD */
@@ -54,17 +56,53 @@ main{
 .card{
 
     flex-basis: 240px;
-    height: 140px;
-    
+    min-height: 140px;
+    align-items: center;
     flex-shrink: 0;
 
-    border: 1px dashed #fff;
     padding: 10px 5px;
+    position: relative;
 }
+
+/* POSITION LAYOUT */
+
+.label{
+    display: flex;
+    position: absolute;
+    bottom:7px;
+    left:5;
+}
+
+.label div{
+
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+.command{
+    position: absolute;
+    top:20px;
+    right:10px;
+    display: none;
+}
+.command span{
+
+    padding:5px;
+    background-color: rgba(6, 43, 255, 0.2);
+}
+
 
 /* FOOTER */
 
 footer{
     background-color: #222222;
-    height: 90px;
+    height: 80px;
+}
+
+/* HOVER */
+
+.card:hover .command{
+       display:block;
+       cursor: pointer;
 }
