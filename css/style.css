@@ -110,8 +110,59 @@ main{
 
 footer{
     background-color: #222222;
-    height: 80px;
+    min-height: 80px;
 }
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.footer-column .left,.center{
+        flex-basis: calc(100%/2 -50px);
+}
+
+.footer-row li{
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.footer-row i{
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.footer-row a{
+    text-decoration:none;
+    color:#fff;
+    
+}
+
+.footer .center{
+     flex-grow: 1;
+}
+
+footer .footer-column .right{
+      flex-basis: 50px;
+      background-color: #4A4A4A;
+}
+
+.right a{
+    color:#f00;
+    text-decoration:none;   
+    background-color: #4A4A4A;
+    font-size: 14px;
+    padding: 33px 10px;
+
+}
+ .fa-share-from-square{
+    color:#0f0;
+ }
 
 /* HOVER */
 
