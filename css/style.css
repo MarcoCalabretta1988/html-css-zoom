@@ -83,13 +83,13 @@ main{
     display: flex;
     position: absolute;
     bottom:7px;
-    left:5;
+    left:5px;
 }
 
 .label div{
 
     padding:5px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     font-size: 13px;
 }
 
@@ -121,7 +121,7 @@ footer{
 }
 
 .footer-column .left,.center{
-        flex-basis: calc(100%/2 -50px);
+        flex-basis: calc((100%/2)-50px);
 }
 
 .footer-row li{
