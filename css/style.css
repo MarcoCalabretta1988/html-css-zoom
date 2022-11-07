@@ -25,7 +25,20 @@ body{
 header{
     background-color: #000;
     height: 40px;
+    line-height: 40px;
+     text-align: right;
 }
+
+.navbar li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#fff;
+}
+
 /* MAIN */
 
 main{
