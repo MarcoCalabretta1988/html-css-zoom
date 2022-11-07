@@ -8,10 +8,63 @@
 /* UTILITY */
 
 .container{
-    max-width: 1200px;
+    max-width: 1680px;
     margin: 0 auto;
 }
 
 
 /* GENERIC */
 
+body{
+    font-family: sans-serif;
+    color:#fff;
+}
+
+/* HEADER */
+
+header{
+    background-color: #000;
+    height: 40px;
+}
+/* MAIN */
+
+main{
+    background-color: aquamarine;
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    padding: 20px 0;
+}
+
+.row{
+    margin: 0 -10px;
+}
+.column {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.card img{
+    max-width: 100%;
+    display:block;
+}
+
+/* CARD */
+
+
+.card{
+
+    flex-basis: 240px;
+    height: 140px;
+    
+    flex-shrink: 0;
+
+    border: 1px dashed #fff;
+    padding: 10px 5px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #222222;
+    height: 90px;
+}
